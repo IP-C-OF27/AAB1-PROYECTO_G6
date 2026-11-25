@@ -22,7 +22,7 @@ public class RegistroComidas {
                 System.out.print("¿Hizo " + nombre + "? (S/N): ");
                 String respuesta = tcl.nextLine().toUpperCase();
                 while (!respuesta.equals("S") && !respuesta.equals("N")){
-                    System.out.print("Respuesta iválida, ingrese S o N: ");
+                    System.out.print("Respuesta inválida, ingrese S o N: ");
                     respuesta = tcl.nextLine().toUpperCase();
                 }
                 if (respuesta.equals("S")){
@@ -75,7 +75,7 @@ public class RegistroComidas {
         double porcentaje = (totalRealizadas / 21.0)*100;
         System.out.println("RESULTADOS DE LA SEMANA");
         System.out.println("1. Total de comidas realizadas: " + totalRealizadas);
-        System.out.println("2. Desayunos: "+ desayunos + " | Almuerxos: " + almuerzos + " | Cenas: "+ cenas);
+        System.out.println("2. Desayunos: "+ desayunos + " | Almuerzos: " + almuerzos + " | Cenas: "+ cenas);
         System.out.println("3. Comidas omitidas: " + omitidas);
         System.out.println("4. Registros por tipo de alimento: ");
         System.out.println(" -Frutas y verduras: " + tipo1);
